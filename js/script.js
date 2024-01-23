@@ -12,43 +12,7 @@ function hide(ch){
 }
 
 
-// quizz
-// function showResults() {
-//     // Get all radio button groups in the form
-    
-//     const radioGroups = document.querySelectorAll('input[type="radio"]:checked');
-    
-    
 
-//     // Display the responses (you can customize this part)
-//     console.log(responses);
-//     alert("Responses: " + JSON.stringify(responses));
-// }
-function showResults() {
-    const radioGroups = document.querySelectorAll('input[type="radio"]:checked');
-    let correctCount = 0;
-    // Store responses in an object
-    const responses = [];
-    radioGroups.forEach(radio => {
-        const isCorrect = radio.getAttribute('data-correct') === 'true';
-
-        if (isCorrect) {
-            correctCount++;
-
-        }else{
-            
-    
-    // Iterate through each radio group and store the selected value
-   
-        responses.push(radio.name);
-    
-        }
-    });
-
-    console.log('Correct Answers:', correctCount);
-    alert('Correct Answers: ' + correctCount);
-    alert('wrong answers : '+JSON.stringify(responses))
-}
 
 
 
